@@ -21,7 +21,7 @@ def main(src: Path, out: Path, hours: float) -> None:
     if out.exists():
         out.unlink()
     con = store.connect(out)
-    con.execute("ATTACH DATABASE ? AS src", (f"file:{src}?mode=ro",))
+    con.execute("ATTACH DATABASE ? AS src", (str(src),))
     last = con.execute("SELECT max(requested_at) FROM src.poll").fetchone()[0]
     start = last - hours * 3600
     con.execute("INSERT INTO poll SELECT * FROM src.poll WHERE requested_at >= ?", (start,))

@@ -21,7 +21,7 @@ KEYED = ["eta", "raw_response", "weather_obs", "warning_snapshot", "route_stop",
 def main(out: Path, sources: list[Path]) -> None:
     con = store.connect(out)
     for src in sources:
-        con.execute("ATTACH DATABASE ? AS src", (f"file:{src}?mode=ro",))
+        con.execute("ATTACH DATABASE ? AS src", (str(src),))
         for t in KEYED:
             cols = [r[1] for r in con.execute(f"PRAGMA src.table_info({t})")]
             if not cols:

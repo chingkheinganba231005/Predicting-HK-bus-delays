@@ -40,9 +40,24 @@ NUMERIC = [
 HISTORY = ["n_prev_obs", "eta_change_s", "since_prev_obs_s", "eta_drift_s", "first_horizon_s",
            "unchanged_streak", "recent_arrivals_30m", "recent_error_30m_s"]
 
-LGB_PARAMS = dict(n_estimators=3000, learning_rate=0.03, num_leaves=63, min_child_samples=100,
+LGB_PARAMS = dict(n_estimators=2000, learning_rate=0.05, num_leaves=31, min_child_samples=200,
                   subsample=0.8, subsample_freq=1, colsample_bytree=0.8, reg_lambda=1.0,
                   verbose=-1, n_jobs=4)
+EARLY_STOPPING = 50
+# Predictions of the same bus a minute apart are highly correlated, so the
+# quantile models are trained on a random subset of whole tracks. Calibration
+# and testing always use every row.
+MAX_TRAIN_ROWS = 2_000_000
+
+
+def subsample_tracks(df: pd.DataFrame, max_rows: int, seed: int) -> pd.DataFrame:
+    if len(df) <= max_rows:
+        return df
+    tracks = df["track_id"].unique()
+    rng = np.random.default_rng(seed)
+    frac = max_rows / len(df)
+    keep = rng.choice(tracks, size=max(1, int(frac * len(tracks))), replace=False)
+    return df[df["track_id"].isin(keep)]
 
 
 def horizon_band(h: pd.Series | np.ndarray) -> pd.Categorical:
@@ -127,6 +142,7 @@ class QuantileModel:
     lower_one_sided: dict = field(default_factory=dict)
 
     def fit(self, train: pd.DataFrame, cal: pd.DataFrame, early_stop_frac: float = 0.15):
+        train = subsample_tracks(train, MAX_TRAIN_ROWS, self.seed)
         Xtr, self.categories = prepare(train)
         Xtr = Xtr[self.features]
         y = train["error_s"].to_numpy(float)
@@ -137,7 +153,7 @@ class QuantileModel:
         for q in QUANTILES:
             m = lgb.LGBMRegressor(objective="quantile", alpha=q, random_state=self.seed, **LGB_PARAMS)
             m.fit(Xtr.iloc[fit_idx], y[fit_idx], eval_X=(Xtr.iloc[es_idx],), eval_y=(y[es_idx],),
-                  callbacks=[lgb.early_stopping(100, verbose=False)])
+                  callbacks=[lgb.early_stopping(EARLY_STOPPING, verbose=False)])
             self.models[q] = m
         pc = self.predict_raw(cal)
         yc = cal["error_s"].to_numpy(float)

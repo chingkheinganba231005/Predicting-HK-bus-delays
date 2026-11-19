@@ -65,6 +65,14 @@ def test_prepare_keeps_categories_stable():
     assert list(Xa["route_key"].cat.categories) == list(Xb["route_key"].cat.categories)
 
 
+def test_subsample_keeps_whole_tracks():
+    df = pd.DataFrame({"track_id": np.repeat(np.arange(100), 10), "x": 1})
+    sub = M.subsample_tracks(df, 300, seed=0)
+    assert len(sub) == 300
+    assert (sub.groupby("track_id").size() == 10).all()
+    assert len(M.subsample_tracks(df, 5000, seed=0)) == 1000
+
+
 def test_rider_policy():
     err = np.array([-30.0, 0.0, 60.0, 120.0])
     out = M.rider_policy(err, np.full(4, -10.0))

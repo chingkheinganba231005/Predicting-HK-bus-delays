@@ -96,11 +96,12 @@ data but do not bias the labels.
 
 ## 4. Disk space
 
-Measured on the first hours of collection: about 17 MB per hour with raw
-responses kept, which is roughly 400 MB a day or **4 GB for four weeks**.
-About 40% of that is the compressed raw responses, kept so the data can be
-re-parsed later. If space is short, start with `--no-raw` (Hong Kong
-Observatory responses are always kept).
+Measured on the first 1.7 hours of collection (19 November 2026, evening
+peak, so a high estimate): about 6.4 MB per hour with raw responses kept,
+roughly **4.3 GB for four weeks**. Raw responses are about half of that;
+they are kept so the data can be re-parsed later. If space is short, start
+with `--no-raw` (about 2 GB for four weeks; Hong Kong Observatory responses
+are always kept).
 
 ## 5. When the collection is finished
 

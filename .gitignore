@@ -8,3 +8,5 @@ __pycache__/
 *.sqlite-wal
 *.sqlite-shm
 .DS_Store
+*.egg-info/
+sample_data/output/models/

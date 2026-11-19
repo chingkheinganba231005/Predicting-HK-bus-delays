@@ -1,0 +1,218 @@
+{
+  "source_rows": {
+    "eta": 64877,
+    "poll": 11152,
+    "weather_obs": 138,
+    "warning_snapshot": 11,
+    "route_stop": 1240,
+    "stop": 390,
+    "collector_gap": 0
+  },
+  "ground_truth": {
+    "n_predictions": 64877,
+    "n_tracks": 2285,
+    "n_labels": 47916
+  },
+  "n_features_rows": 43528,
+  "first_prediction_ts": 1795084271,
+  "last_prediction_ts": 1795090424,
+  "n_service_days": 1,
+  "collection_health": [
+    {
+      "source": "ctb_eta",
+      "n_requests": 10500,
+      "error_rate": 0.0,
+      "retried_rate": 0.00019047619047619048,
+      "latency_p50_ms": 304.57499249996545,
+      "latency_p95_ms": 559.9111064500448,
+      "unchanged_rate": 0.014761904761904763,
+      "first_request": "2026-11-19T10:32:38.969961+00:00",
+      "last_request": "2026-11-19T12:16:05.504532+00:00"
+    },
+    {
+      "source": "hko_rhrread",
+      "n_requests": 11,
+      "error_rate": 0.0,
+      "retried_rate": 0.0,
+      "latency_p50_ms": 1294.8237539994807,
+      "latency_p95_ms": 4945.557020499791,
+      "unchanged_rate": 0.7272727272727273,
+      "first_request": "2026-11-19T10:32:45.188081+00:00",
+      "last_request": "2026-11-19T12:08:05.245384+00:00"
+    },
+    {
+      "source": "hko_warnsum",
+      "n_requests": 11,
+      "error_rate": 0.0,
+      "retried_rate": 0.0,
+      "latency_p50_ms": 1251.224061999892,
+      "latency_p95_ms": 3289.1137704998528,
+      "unchanged_rate": 0.0,
+      "first_request": "2026-11-19T10:32:45.239070+00:00",
+      "last_request": "2026-11-19T12:08:05.252156+00:00"
+    },
+    {
+      "source": "kmb_route_eta",
+      "n_requests": 630,
+      "error_rate": 0.0,
+      "retried_rate": 0.0015873015873015873,
+      "latency_p50_ms": 944.6373860000676,
+      "latency_p95_ms": 1417.0456787997637,
+      "unchanged_rate": 0.02857142857142857,
+      "first_request": "2026-11-19T10:32:38.964460+00:00",
+      "last_request": "2026-11-19T12:16:00.010619+00:00"
+    }
+  ],
+  "track_status_by_route": [
+    {
+      "co": "CTB",
+      "route": "1",
+      "n_tracks": 118,
+      "share_arrived": 1.0,
+      "share_not_converged": 0.0,
+      "share_left_before_eta": 0.0,
+      "share_dropped": 0.0,
+      "share_censored": 0.0,
+      "gone_after_p50_s": 0.0,
+      "gone_after_p90_s": 18.299999999999997
+    },
+    {
+      "co": "CTB",
+      "route": "10",
+      "n_tracks": 137,
+      "share_arrived": 1.0,
+      "share_not_converged": 0.0,
+      "share_left_before_eta": 0.0,
+      "share_dropped": 0.0,
+      "share_censored": 0.0,
+      "gone_after_p50_s": 2.0,
+      "gone_after_p90_s": 23.0
+    },
+    {
+      "co": "CTB",
+      "route": "5B",
+      "n_tracks": 75,
+      "share_arrived": 1.0,
+      "share_not_converged": 0.0,
+      "share_left_before_eta": 0.0,
+      "share_dropped": 0.0,
+      "share_censored": 0.0,
+      "gone_after_p50_s": 0.0,
+      "gone_after_p90_s": 26.60000000000001
+    },
+    {
+      "co": "CTB",
+      "route": "970",
+      "n_tracks": 158,
+      "share_arrived": 0.9936708860759493,
+      "share_not_converged": 0.0,
+      "share_left_before_eta": 0.0,
+      "share_dropped": 0.006329113924050633,
+      "share_censored": 0.0,
+      "gone_after_p50_s": 6.0,
+      "gone_after_p90_s": 27.0
+    },
+    {
+      "co": "CTB",
+      "route": "A21",
+      "n_tracks": 220,
+      "share_arrived": 0.9863636363636363,
+      "share_not_converged": 0.0,
+      "share_left_before_eta": 0.0,
+      "share_dropped": 0.0,
+      "share_censored": 0.013636363636363636,
+      "gone_after_p50_s": 12.0,
+      "gone_after_p90_s": 33.0
+    },
+    {
+      "co": "KMB",
+      "route": "1A",
+      "n_tracks": 199,
+      "share_arrived": 1.0,
+      "share_not_converged": 0.0,
+      "share_left_before_eta": 0.0,
+      "share_dropped": 0.0,
+      "share_censored": 0.0,
+      "gone_after_p50_s": 105.0,
+      "gone_after_p90_s": 129.0
+    },
+    {
+      "co": "KMB",
+      "route": "2",
+      "n_tracks": 106,
+      "share_arrived": 1.0,
+      "share_not_converged": 0.0,
+      "share_left_before_eta": 0.0,
+      "share_dropped": 0.0,
+      "share_censored": 0.0,
+      "gone_after_p50_s": 104.0,
+      "gone_after_p90_s": 124.5
+    },
+    {
+      "co": "KMB",
+      "route": "271",
+      "n_tracks": 147,
+      "share_arrived": 1.0,
+      "share_not_converged": 0.0,
+      "share_left_before_eta": 0.0,
+      "share_dropped": 0.0,
+      "share_censored": 0.0,
+      "gone_after_p50_s": 104.0,
+      "gone_after_p90_s": 126.4
+    },
+    {
+      "co": "KMB",
+      "route": "68X",
+      "n_tracks": 134,
+      "share_arrived": 0.9552238805970149,
+      "share_not_converged": 0.0,
+      "share_left_before_eta": 0.0,
+      "share_dropped": 0.029850746268656716,
+      "share_censored": 0.014925373134328358,
+      "gone_after_p50_s": 105.0,
+      "gone_after_p90_s": 130.0
+    },
+    {
+      "co": "KMB",
+      "route": "6C",
+      "n_tracks": 135,
+      "share_arrived": 1.0,
+      "share_not_converged": 0.0,
+      "share_left_before_eta": 0.0,
+      "share_dropped": 0.0,
+      "share_censored": 0.0,
+      "gone_after_p50_s": 103.0,
+      "gone_after_p90_s": 131.0
+    },
+    {
+      "co": "KMB",
+      "route": "960",
+      "n_tracks": 227,
+      "share_arrived": 1.0,
+      "share_not_converged": 0.0,
+      "share_left_before_eta": 0.0,
+      "share_dropped": 0.0,
+      "share_censored": 0.0,
+      "gone_after_p50_s": 107.0,
+      "gone_after_p90_s": 129.0
+    }
+  ],
+  "track_status_overall": [
+    {
+      "status": "arrived",
+      "n": 1646
+    },
+    {
+      "status": "unmatched",
+      "n": 5
+    },
+    {
+      "status": "dropped",
+      "n": 5
+    }
+  ],
+  "collector_gaps": {
+    "n": 0,
+    "total_seconds": 0
+  }
+}

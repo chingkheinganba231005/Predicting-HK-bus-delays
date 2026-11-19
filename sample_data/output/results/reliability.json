@@ -1,0 +1,394 @@
+{
+  "by_route_hour": [
+    {
+      "route_label": "CTB 1",
+      "hour": 18,
+      "n": 1375,
+      "mae_s": 110.77527272727272,
+      "median_error_s": -33.0,
+      "p90_abs_error_s": 258.0,
+      "late_2min_share": 0.096
+    },
+    {
+      "route_label": "CTB 1",
+      "hour": 19,
+      "n": 2172,
+      "mae_s": 106.19014732965009,
+      "median_error_s": -72.0,
+      "p90_abs_error_s": 258.0,
+      "late_2min_share": 0.0
+    },
+    {
+      "route_label": "CTB 1",
+      "hour": 20,
+      "n": 85,
+      "mae_s": 23.88235294117647,
+      "median_error_s": 0.0,
+      "p90_abs_error_s": 48.20000000000002,
+      "late_2min_share": 0.0
+    },
+    {
+      "route_label": "CTB 10",
+      "hour": 18,
+      "n": 1429,
+      "mae_s": 109.21273617914626,
+      "median_error_s": 23.0,
+      "p90_abs_error_s": 238.0,
+      "late_2min_share": 0.2351294611616515
+    },
+    {
+      "route_label": "CTB 10",
+      "hour": 19,
+      "n": 2624,
+      "mae_s": 96.0548780487805,
+      "median_error_s": 15.5,
+      "p90_abs_error_s": 222.70000000000027,
+      "late_2min_share": 0.14596036585365854
+    },
+    {
+      "route_label": "CTB 10",
+      "hour": 20,
+      "n": 104,
+      "mae_s": 34.50961538461539,
+      "median_error_s": -20.5,
+      "p90_abs_error_s": 76.7,
+      "late_2min_share": 0.0
+    },
+    {
+      "route_label": "CTB 5B",
+      "hour": 18,
+      "n": 1090,
+      "mae_s": 126.12935779816513,
+      "median_error_s": -42.0,
+      "p90_abs_error_s": 275.0,
+      "late_2min_share": 0.22018348623853212
+    },
+    {
+      "route_label": "CTB 5B",
+      "hour": 19,
+      "n": 1646,
+      "mae_s": 95.34750911300121,
+      "median_error_s": -55.0,
+      "p90_abs_error_s": 218.0,
+      "late_2min_share": 0.022478736330498177
+    },
+    {
+      "route_label": "CTB 5B",
+      "hour": 20,
+      "n": 45,
+      "mae_s": 51.31111111111111,
+      "median_error_s": -44.0,
+      "p90_abs_error_s": 68.0,
+      "late_2min_share": 0.044444444444444446
+    },
+    {
+      "route_label": "CTB 970",
+      "hour": 18,
+      "n": 1437,
+      "mae_s": 114.62908837856646,
+      "median_error_s": 45.0,
+      "p90_abs_error_s": 290.0,
+      "late_2min_share": 0.27348643006263046
+    },
+    {
+      "route_label": "CTB 970",
+      "hour": 19,
+      "n": 2400,
+      "mae_s": 115.86541666666666,
+      "median_error_s": 19.0,
+      "p90_abs_error_s": 278.0999999999999,
+      "late_2min_share": 0.19125
+    },
+    {
+      "route_label": "CTB 970",
+      "hour": 20,
+      "n": 114,
+      "mae_s": 30.87719298245614,
+      "median_error_s": 13.5,
+      "p90_abs_error_s": 75.7,
+      "late_2min_share": 0.008771929824561403
+    },
+    {
+      "route_label": "CTB A21",
+      "hour": 18,
+      "n": 1482,
+      "mae_s": 132.11808367071524,
+      "median_error_s": 35.5,
+      "p90_abs_error_s": 311.8000000000002,
+      "late_2min_share": 0.26450742240215924
+    },
+    {
+      "route_label": "CTB A21",
+      "hour": 19,
+      "n": 2999,
+      "mae_s": 81.81260420140046,
+      "median_error_s": 24.0,
+      "p90_abs_error_s": 188.20000000000027,
+      "late_2min_share": 0.18206068689563187
+    },
+    {
+      "route_label": "CTB A21",
+      "hour": 20,
+      "n": 212,
+      "mae_s": 35.70283018867924,
+      "median_error_s": -2.5,
+      "p90_abs_error_s": 85.0,
+      "late_2min_share": 0.0
+    },
+    {
+      "route_label": "KMB 1A",
+      "hour": 18,
+      "n": 1397,
+      "mae_s": 100.24266284896206,
+      "median_error_s": -5.0,
+      "p90_abs_error_s": 213.0,
+      "late_2min_share": 0.16034359341445956
+    },
+    {
+      "route_label": "KMB 1A",
+      "hour": 19,
+      "n": 2747,
+      "mae_s": 107.07972333454678,
+      "median_error_s": 15.0,
+      "p90_abs_error_s": 243.0,
+      "late_2min_share": 0.22388059701492538
+    },
+    {
+      "route_label": "KMB 1A",
+      "hour": 20,
+      "n": 172,
+      "mae_s": 42.72093023255814,
+      "median_error_s": 15.0,
+      "p90_abs_error_s": 91.70000000000002,
+      "late_2min_share": 0.011627906976744186
+    },
+    {
+      "route_label": "KMB 2",
+      "hour": 18,
+      "n": 1425,
+      "mae_s": 84.11298245614034,
+      "median_error_s": 25.0,
+      "p90_abs_error_s": 185.0,
+      "late_2min_share": 0.2736842105263158
+    },
+    {
+      "route_label": "KMB 2",
+      "hour": 19,
+      "n": 2334,
+      "mae_s": 83.0955441302485,
+      "median_error_s": 29.0,
+      "p90_abs_error_s": 173.70000000000027,
+      "late_2min_share": 0.22879177377892032
+    },
+    {
+      "route_label": "KMB 2",
+      "hour": 20,
+      "n": 89,
+      "mae_s": 45.41573033707865,
+      "median_error_s": 10.0,
+      "p90_abs_error_s": 84.20000000000002,
+      "late_2min_share": 0.0898876404494382
+    },
+    {
+      "route_label": "KMB 271",
+      "hour": 18,
+      "n": 1420,
+      "mae_s": 315.7098591549296,
+      "median_error_s": 52.0,
+      "p90_abs_error_s": 1112.700000000001,
+      "late_2min_share": 0.3901408450704225
+    },
+    {
+      "route_label": "KMB 271",
+      "hour": 19,
+      "n": 2803,
+      "mae_s": 117.6742775597574,
+      "median_error_s": 1.0,
+      "p90_abs_error_s": 271.60000000000036,
+      "late_2min_share": 0.1897966464502319
+    },
+    {
+      "route_label": "KMB 271",
+      "hour": 20,
+      "n": 143,
+      "mae_s": 39.71328671328671,
+      "median_error_s": -5.0,
+      "p90_abs_error_s": 96.39999999999999,
+      "late_2min_share": 0.02097902097902098
+    },
+    {
+      "route_label": "KMB 68X",
+      "hour": 18,
+      "n": 1243,
+      "mae_s": 90.98310539018503,
+      "median_error_s": 1.0,
+      "p90_abs_error_s": 228.0,
+      "late_2min_share": 0.1737731295253419
+    },
+    {
+      "route_label": "KMB 68X",
+      "hour": 19,
+      "n": 2193,
+      "mae_s": 96.92612859097127,
+      "median_error_s": -42.0,
+      "p90_abs_error_s": 199.0,
+      "late_2min_share": 0.046511627906976744
+    },
+    {
+      "route_label": "KMB 68X",
+      "hour": 20,
+      "n": 111,
+      "mae_s": 30.45945945945946,
+      "median_error_s": 5.0,
+      "p90_abs_error_s": 70.0,
+      "late_2min_share": 0.0
+    },
+    {
+      "route_label": "KMB 6C",
+      "hour": 18,
+      "n": 1417,
+      "mae_s": 170.33239237826393,
+      "median_error_s": 39.0,
+      "p90_abs_error_s": 770.0,
+      "late_2min_share": 0.28722653493295697
+    },
+    {
+      "route_label": "KMB 6C",
+      "hour": 19,
+      "n": 2569,
+      "mae_s": 110.25613079019074,
+      "median_error_s": 13.0,
+      "p90_abs_error_s": 266.2000000000003,
+      "late_2min_share": 0.1950175165434021
+    },
+    {
+      "route_label": "KMB 6C",
+      "hour": 20,
+      "n": 106,
+      "mae_s": 36.556603773584904,
+      "median_error_s": 0.5,
+      "p90_abs_error_s": 76.0,
+      "late_2min_share": 0.018867924528301886
+    },
+    {
+      "route_label": "KMB 960",
+      "hour": 18,
+      "n": 1390,
+      "mae_s": 88.02877697841727,
+      "median_error_s": 11.5,
+      "p90_abs_error_s": 199.0,
+      "late_2min_share": 0.11942446043165468
+    },
+    {
+      "route_label": "KMB 960",
+      "hour": 19,
+      "n": 2622,
+      "mae_s": 91.52479023646072,
+      "median_error_s": -25.0,
+      "p90_abs_error_s": 199.0,
+      "late_2min_share": 0.06254767353165523
+    },
+    {
+      "route_label": "KMB 960",
+      "hour": 20,
+      "n": 133,
+      "mae_s": 34.556390977443606,
+      "median_error_s": 7.0,
+      "p90_abs_error_s": 66.0,
+      "late_2min_share": 0.007518796992481203
+    }
+  ],
+  "error_quantiles_by_horizon": [
+    {
+      "co": "CTB",
+      "horizon_band": "0-2 min",
+      "0.05": -12.0,
+      "0.25": 1.0,
+      "0.5": 12.0,
+      "0.75": 31.0,
+      "0.95": 69.79999999999995
+    },
+    {
+      "co": "CTB",
+      "horizon_band": "10-20 min",
+      "0.05": -141.0,
+      "0.25": -51.0,
+      "0.5": 20.0,
+      "0.75": 101.0,
+      "0.95": 266.6999999999998
+    },
+    {
+      "co": "CTB",
+      "horizon_band": "2-5 min",
+      "0.05": -68.0,
+      "0.25": -26.0,
+      "0.5": 0.0,
+      "0.75": 29.0,
+      "0.95": 105.0
+    },
+    {
+      "co": "CTB",
+      "horizon_band": "20+ min",
+      "0.05": -302.0,
+      "0.25": -127.0,
+      "0.5": -38.0,
+      "0.75": 77.0,
+      "0.95": 307.5499999999993
+    },
+    {
+      "co": "CTB",
+      "horizon_band": "5-10 min",
+      "0.05": -89.0,
+      "0.25": -31.0,
+      "0.5": 16.0,
+      "0.75": 63.0,
+      "0.95": 192.0
+    },
+    {
+      "co": "KMB",
+      "horizon_band": "0-2 min",
+      "0.05": -42.849999999999994,
+      "0.25": -13.0,
+      "0.5": 4.0,
+      "0.75": 29.25,
+      "0.95": 70.84999999999991
+    },
+    {
+      "co": "KMB",
+      "horizon_band": "10-20 min",
+      "0.05": -174.2,
+      "0.25": -62.0,
+      "0.5": 10.0,
+      "0.75": 96.0,
+      "0.95": 310.0
+    },
+    {
+      "co": "KMB",
+      "horizon_band": "2-5 min",
+      "0.05": -77.0,
+      "0.25": -29.0,
+      "0.5": 1.0,
+      "0.75": 41.0,
+      "0.95": 111.0
+    },
+    {
+      "co": "KMB",
+      "horizon_band": "20+ min",
+      "0.05": -232.0,
+      "0.25": -79.0,
+      "0.5": 17.0,
+      "0.75": 126.0,
+      "0.95": 469.59999999999854
+    },
+    {
+      "co": "KMB",
+      "horizon_band": "5-10 min",
+      "0.05": -121.0,
+      "0.25": -45.0,
+      "0.5": 1.0,
+      "0.75": 58.75,
+      "0.95": 170.3499999999999
+    }
+  ],
+  "n_labelled": 43528
+}
