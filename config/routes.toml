@@ -1,0 +1,74 @@
+# Routes polled by the collector.
+#
+# KMB: one request per route returns the ETAs of every stop in both
+# directions, so all directions are collected at no extra cost.
+# Citybus has no route-level endpoint: one request per (stop, route), so a
+# subset of stops is chosen per direction (evenly spaced along the route,
+# terminus excluded).
+
+poll_interval_seconds = 60
+weather_interval_seconds = 600
+stops_per_direction = 10          # stops kept per route direction (both operators)
+http_timeout_seconds = 10
+max_workers = 8
+
+[[route]]
+company = "KMB"
+route = "1A"
+service_type = 1
+note = "Sau Mau Ping - Star Ferry, urban Kowloon trunk route"
+
+[[route]]
+company = "KMB"
+route = "2"
+service_type = 1
+note = "Star Ferry - So Uk, Nathan Road corridor"
+
+[[route]]
+company = "KMB"
+route = "6C"
+service_type = 1
+note = "Kowloon City Ferry - Mei Foo"
+
+[[route]]
+company = "KMB"
+route = "271"
+service_type = 1
+note = "Tai Po - West Kowloon, New Territories to Kowloon"
+
+[[route]]
+company = "KMB"
+route = "960"
+service_type = 1
+note = "Tuen Mun - Wan Chai, cross-harbour via Western Harbour Crossing"
+
+[[route]]
+company = "KMB"
+route = "68X"
+service_type = 1
+note = "Hung Shui Kiu - Mong Kok, express via Tuen Mun Road"
+
+[[route]]
+company = "CTB"
+route = "1"
+note = "Central - Happy Valley, Hong Kong Island urban"
+
+[[route]]
+company = "CTB"
+route = "5B"
+note = "Kennedy Town - Causeway Bay"
+
+[[route]]
+company = "CTB"
+route = "10"
+note = "Kennedy Town - North Point, along the tram corridor"
+
+[[route]]
+company = "CTB"
+route = "970"
+note = "Cyberport - So Uk, cross-harbour"
+
+[[route]]
+company = "CTB"
+route = "A21"
+note = "Hung Hom - Airport, long airport express"

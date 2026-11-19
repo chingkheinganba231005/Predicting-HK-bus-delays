@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  launchd agent that keeps the collector running and restarts it if it exits.
+  Replace REPO with the absolute path of this repository, then see
+  docs/collecting.md for the install commands.
+  caffeinate -i stops the Mac from idle-sleeping while the collector runs
+  (closing the lid on battery will still sleep it).
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>hk.bus.collector</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/caffeinate</string>
+        <string>-i</string>
+        <string>REPO/.venv/bin/python</string>
+        <string>-m</string>
+        <string>hkbus.collector</string>
+        <string>--db</string>
+        <string>REPO/data/collector.sqlite</string>
+        <string>--log-dir</string>
+        <string>REPO/data/logs</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>REPO</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>ThrottleInterval</key>
+    <integer>30</integer>
+    <key>StandardOutPath</key>
+    <string>REPO/data/logs/launchd.out</string>
+    <key>StandardErrorPath</key>
+    <string>REPO/data/logs/launchd.err</string>
+</dict>
+</plist>
